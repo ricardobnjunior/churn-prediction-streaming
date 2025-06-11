@@ -1,34 +1,36 @@
-# 🎧 Predição de Churn em Serviços de Streaming com Machine Learning
+[![LinkedIn – Ricardo Neves Junior](https://img.shields.io/badge/LinkedIn--blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardonevesjunior)
 
-Este projeto simula um cenário realista de **análise de comportamento de usuários e predição de churn (cancelamento)** em serviços de streaming como **Netflix e Spotify**, utilizando dados sintéticos, engenharia de features comportamentais e modelos de machine learning.
+# 🎧 Churn Prediction in Streaming Services with Machine Learning
 
----
-
-## 📌 Objetivos
-
-- Detectar sinais comportamentais que antecedem o churn
-- Construir um modelo preditivo robusto usando aprendizado de máquina
-- Aplicar segmentações e insights acionáveis para retenção
-- Demonstrar o ciclo completo de um projeto de ciência de dados: dados → modelo → ação
+This project simulates a realistic scenario of **user behavior analysis and churn prediction** in subscription-based streaming services like **Netflix and Spotify**, using synthetic data, behavioral feature engineering, and machine learning models.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📌 Objectives
+
+- Detect behavioral signals that precede churn
+- Build a robust predictive model using machine learning
+- Apply segmentation and actionable insights for user retention
+- Demonstrate the complete lifecycle of a data science project: data → model → action
+
+---
+
+## 📂 Project Structure
 
 ```
 churn-prediction-streaming/
 ├── data/
-│   ├── raw/                    # Dados originais (ex: streaming_users_behavior.csv)
-│   └── processed/              # Dados com features geradas (ex: churn_users.csv)
+│   ├── raw/                    # Raw data (e.g., streaming_users_behavior.csv)
+│   └── processed/              # Processed data with features (e.g., churn_users.csv)
 ├── notebooks/
 │   └── exploratory_analysis.ipynb
 ├── src/
 │   ├── feature_engineering.py
 │   ├── train_model.py
 │   ├── predict_churn.py
-│   └── run_pipeline.py         # Script principal do pipeline
+│   └── run_pipeline.py         # Main pipeline script
 ├── models/
-│   └── churn_model.pkl         # Modelo treinado com Random Forest
+│   └── churn_model.pkl         # Trained Random Forest model
 ├── reports/
 │   └── churn_dashboard_mock.png
 ├── README.md
@@ -37,40 +39,40 @@ churn-prediction-streaming/
 
 ---
 
-## 🧪 Dataset Simulado
+## 🧪 Simulated Dataset
 
-O projeto utiliza um dataset fictício com mais de 5.000 usuários e as seguintes variáveis:
+The project uses a synthetic dataset with over 5,000 users and the following features:
 
-- `user_id`: ID do usuário
-- `subscription_type`: tipo de plano (free, premium)
-- `total_watch_time_min`: tempo total de consumo
-- `num_scroll_events`: número de scrolls sem clicar
-- `preferred_genre`: gênero favorito
-- `account_age_days`: tempo de conta
-- `days_since_last_login`: dias desde último login
-- `used_recommendations`: usou sugestões do sistema?
-- `num_sessions_last_30d`: sessões nos últimos 30 dias
-- `num_genres_watched`: diversidade de consumo
-- `churned`: variável alvo
+- `user_id`: user ID
+- `subscription_type`: subscription plan (free, premium)
+- `total_watch_time_min`: total content consumption time
+- `num_scroll_events`: number of scrolls without clicking
+- `preferred_genre`: favorite genre
+- `account_age_days`: account age
+- `days_since_last_login`: days since last login
+- `used_recommendations`: whether recommendations were used
+- `num_sessions_last_30d`: sessions in the last 30 days
+- `num_genres_watched`: content diversity
+- `churned`: target variable
 
 ---
 
-## 🚀 Como Executar
+## 🚀 How to Run
 
-1. Clone o repositório:
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/seu-usuario/churn-prediction-streaming.git
+git clone https://github.com/your-username/churn-prediction-streaming.git
 cd churn-prediction-streaming
 ```
 
-2. Instale as dependências:
+2. Install the dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Execute o pipeline completo:
+3. Run the full pipeline:
 
 ```bash
 python src/run_pipeline.py
@@ -78,44 +80,44 @@ python src/run_pipeline.py
 
 ---
 
-## 📈 Modelo Utilizado
+## 📈 Model Used
 
-- Algoritmo: `RandomForestClassifier`
-- Avaliação: AUC, F1-score, Precision, Recall
-- Feature Importance e matriz de confusão disponíveis no notebook
-
----
-
-## 📊 Exemplos de Visualizações
-
-- Gráfico de importância de variáveis
-- Matriz de confusão
-- Dashboard com risco de churn por usuário (mock)
+- Algorithm: `RandomForestClassifier`
+- Evaluation metrics: AUC, F1-score, Precision, Recall
+- Feature importance and confusion matrix available in the notebook
 
 ---
 
-## 📚 Aprendizados
+## 📊 Visualization Examples
 
-✅ Como transformar dados brutos em sinais de comportamento  
-✅ Engenharia de features aplicadas à retenção  
-✅ Predição prática de cancelamento de clientes  
-✅ Conexão entre ciência de dados e ações reais de retenção
-
----
-
-## 🤝 Contribuições
-
-Pull requests são bem-vindos. Para mudanças maiores, por favor abra uma issue antes para discutir o que você gostaria de modificar.
+- Feature importance bar chart
+- Confusion matrix
+- Churn risk dashboard per user (mock)
 
 ---
 
-## 🧠 Autor
+## 📚 Key Learnings
+
+✅ How to turn raw data into behavioral signals  
+✅ Feature engineering applied to retention modeling  
+✅ Practical churn prediction in real use cases  
+✅ Bridging data science with real-world business actions
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## 🧠 Author
 
 **Ricardo Neves Junior**  
 🔗 [LinkedIn](https://www.linkedin.com/in/ricardonevesjunior)
 
 ---
 
-## 📝 Licença
+## 📝 License
 
 MIT © Ricardo Neves Junior
