@@ -114,7 +114,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## 🧠 Author
 
 **Ricardo Neves Junior**  
-🔗 [LinkedIn](https://www.linkedin.com/in/ricardonevesjunior)
+🔗 [LinkedIn](https://www.linkedin.com/in/ricardo-neves-junior/)
 
 ---
 
